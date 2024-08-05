@@ -1,4 +1,5 @@
 import './App.css'
+
 import Navbar from './Components/Navigation/Navbar'
 import Routingpage from './Routing/Routingpage'
 // import{productsData} from './Components/DataComponent/ProductData';
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    
     <Routingpage/>
     </>
   )

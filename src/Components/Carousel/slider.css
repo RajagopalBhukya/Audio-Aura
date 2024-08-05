@@ -1,0 +1,33 @@
+.images img{
+    height: 500px;
+    width: 500px;
+    transform: translate(140%);
+}
+
+
+.text .back-ground-text{
+    transform: translate(-220px, 100px);
+    font-size: 260px;
+    font-weight: bolder;
+    mix-blend-mode:lighten;
+    color: rgba(20, 21, 20, 0.797);
+}
+
+.text .normal-text{
+    transform: translate(-45%, -340%);
+    font-size: 27px;
+    font-weight: bold;
+    color: #4d4d50;
+}
+
+.text .buttontag{
+
+        transform: translate(-500%, -250%);
+        background-color: red;
+        border: 0px;
+        font-size:large;
+        color: #a8adc1;
+        padding: 10px;
+        border-radius: 5px;
+    
+}

@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <>
 
-<nav className="navbar navbar-expand-lg bg-black">
+<nav className="navbar navbar-expand-lg bg-black sticky-top">
         <div className="container-fluid">
           <Link  to = "/"  class="navbar-brand">
             <h2 className='text-white '>Tech-Shop</h2></Link>
