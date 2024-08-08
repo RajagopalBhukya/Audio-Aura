@@ -12,3 +12,16 @@
   }
 
 
+.button_division button{
+  background-color: red;
+  color: white;
+}
+
+.iconTag{
+  margin-left: 20px;
+}
+
+.iconTag .coni{
+    color: red;
+    text-size-adjust: 50px;
+}

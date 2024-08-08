@@ -14,7 +14,7 @@ function Navbar() {
             
           <ul className='d-flex list-unstyled flex-row gap-5'>
             <li ><BsSearch size={20}/></li>
-            <li className='nav'><Link  className='text-decoration-none text-white' to='cart'><FaCartShopping size={20}/></Link></li>
+            <li className='nav'><Link  className='text-decoration-none text-white' to='cart'><FaCartShopping size={20}/></Link><span>0</span></li>
             <li><FaUser size={20}/></li>
           </ul>
 

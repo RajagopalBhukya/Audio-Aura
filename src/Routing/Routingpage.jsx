@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import TechShopData from "../MainPage/TechShopData";
+import TechShopData from "../Components/MainPage/TechShopData";
 import Cart from "../Components/Cartpage/Cart";
 
 

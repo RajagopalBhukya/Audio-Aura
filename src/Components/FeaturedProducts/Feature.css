@@ -1,0 +1,61 @@
+.titleText .featuredHead{
+    margin: 100px;
+}
+
+/* Feature.css */
+.titleText {
+    margin-bottom: 1.5rem;
+}
+
+.featuredHead {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.my-4 {
+    position: relative;
+}
+
+.slick-slide {
+    transition: transform 0.5s ease;
+}
+
+.slick-center .slide-item {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.slide-item {
+    position: relative;
+    padding: 0 10px;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+}
+
+.product-info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+}
+
+.product-info p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-title.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
