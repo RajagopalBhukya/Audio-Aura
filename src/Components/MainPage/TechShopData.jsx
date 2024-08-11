@@ -6,6 +6,8 @@ import './Main.css'
 import Slider from '../Carousel/Slider';
 import FeatureProductSlider from '../FeaturedProducts/FeatureProductSlider';
 import { IoStarSharp } from "react-icons/io5";
+import BrowseProducts from '../BrowseAll/BrowseProducts';
+
 
 function TechShopData(){
   const [initialData, setData] = useState([]);
@@ -20,10 +22,11 @@ function TechShopData(){
    <Slider/>
    <FeatureProductSlider/>
    
+   <div className='heading'><h2 className='text-center heading-text'>Top Products</h2></div>
   
     <div className=' my-4 p-2 m-4'>
       <div className='row'>
-        {initialData.slice(0, 11).map((products) => (
+        {initialData.slice(0, 12).map((products) => (
           
           <div key={products.id} className='col-md-3 mb-4'>
             
@@ -53,11 +56,19 @@ function TechShopData(){
                 <button className='btn  px-5 mt-2 '><h4>Add to cart</h4></button>
               </div>
             </div>
+            
           </div>
         </Link>
+        
       </div>
+      
     ))}
+     <span>
+    <BrowseProducts  className=''/>
+  </span>
   </div>
+ 
+  
 </div>
 
    </>

@@ -59,3 +59,19 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+
+/* Ensure only the center slide is scaled up */
+.slick-center .slide-item {
+    transform: scale(1.2);
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Reset scaling for other slides */
+.slick-slide:not(.slick-center) .slide-item {
+    transform: scale(1);
+    z-index: 0;
+ 
+}
