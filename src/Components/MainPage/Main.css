@@ -32,3 +32,14 @@
    font-weight: bolder;
    font-size: 35px;
 }
+
+
+.button-Decoration{
+  color: white;
+  font-weight: bolder;
+  background-color: red;
+  padding:  10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+}

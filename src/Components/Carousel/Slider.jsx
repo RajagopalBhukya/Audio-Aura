@@ -11,7 +11,7 @@ function Slider() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} controls ={false} interval={2000}>
+    <Carousel activeIndex={index} onSelect={handleSelect} controls ={false} interval={800}>
       <Carousel.Item className='images'>
        <img src='/images/products/jbl660nc-1.png' alt="" className='img-fluid'/>
         <Carousel.Caption className='text'>

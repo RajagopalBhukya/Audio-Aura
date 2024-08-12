@@ -1,6 +1,6 @@
 import './App.css'
-
 import Navbar from './Components/Navigation/Navbar'
+
 import Routingpage from './Routing/Routingpage'
 
 
@@ -9,8 +9,6 @@ function App() {
     <>
     <Navbar/>
     <Routingpage/>
-    
-      
     </>
   )
 }
