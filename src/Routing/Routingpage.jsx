@@ -9,9 +9,9 @@ function Routingpage() {
         <>
         <Routes>
             <Route path="/" element = {<TechShopData/>}/>
-            <Route path="cart" element={<Cart/>}/>
-            <Route path="all-products" element = {<AllBrowser/>}/>
-            {/* <Route path="all-products" element = {<AllBrowser/>}/> */}
+            <Route path="/cart" element={<Cart/>}/>
+            <Route path="/all-products" element = {<AllBrowser/>}/>
+            <Route path="/cart-products" element = {<AllBrowser/>}/>
         </Routes>
         </>
     );

@@ -10,7 +10,7 @@ function Cart() {
                 <BsCartXFill className="cart-icon" />
             </div>
             <h1 className="text-center">Your Cart is Empty</h1>
-            <Link to = "all-products"><button className="button-tag">Satrt shopping</button></Link>
+            <Link to = "/cart-products"><button className="button-tag">Satrt shopping</button></Link>
         </div>
         </>
     );

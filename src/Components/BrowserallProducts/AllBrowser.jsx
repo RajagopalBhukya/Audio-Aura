@@ -14,6 +14,7 @@ function AllBrowser(){
   
   return (
    <>
+    <div>
      <div className=' my-4 p-2 m-4'>
       <div className='row'>
         {initialData.map((products) => (
@@ -58,6 +59,7 @@ function AllBrowser(){
   
 </div>
 <OurAdvantages/>
+</div>
    </>
   );
 }
