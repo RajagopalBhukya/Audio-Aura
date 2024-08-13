@@ -3,7 +3,7 @@ import productsData from '../DataComponent/ProductData';
 import {Link} from 'react-router-dom';
 import { IoStarSharp } from "react-icons/io5";
 import OurAdvantages from '../../Footer/TemperoryFooter/OurAdvantages';
-
+import './BrowerallProducts.css'
 function AllBrowser(){
   const [initialData, setData] = useState([]);
 
@@ -14,7 +14,43 @@ function AllBrowser(){
   
   return (
    <>
-    <div>
+    <div className='display-items'>
+      <div className='side-content'>
+        <button className='btn-styling'>Clear All</button>
+        <h4>Sort By</h4>
+        <hr />
+        <ul>
+          <li>Latest</li>
+          <li>Featured</li>
+          <li>Top Rated</li>
+          <li>Price(Lowest)</li>
+          <li>Price(Highest)</li>
+        </ul>
+        <h4>Filter By</h4>
+        <hr />
+        <h5>Brands</h5>
+        <input type="checkbox"/>
+        <label>JBL</label>
+        <br />
+        <input type="checkbox"/>
+        <label>BoAt</label>
+        <br />
+        <input type="checkbox"/>
+        <label>Sony</label>
+
+        <h5>Category</h5>
+        <input type="checkbox"/>
+        <label>HeadPhones</label>
+        <br />
+        <input type="checkbox"/>
+        <label>EarBuds</label>
+        <br />
+        <input type="checkbox"/>
+        <label>Ear Phones</label>
+        <br />
+        <input type="checkbox"/>
+        <label>Neckband</label>
+      </div>
      <div className=' my-4 p-2 m-4'>
       <div className='row'>
         {initialData.map((products) => (
@@ -58,8 +94,9 @@ function AllBrowser(){
  
   
 </div>
-<OurAdvantages/>
+
 </div>
+<OurAdvantages/>
    </>
   );
 }

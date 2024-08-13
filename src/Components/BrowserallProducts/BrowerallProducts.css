@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.display-items{
+    display: flex;
+}
+.side-content{
+    width: 50%;
+    padding: 10px 10px;
+
+}
+.side-content ul{
+    list-style-type: none;
+    /* padding-right: 20px; */
+    text-align: start;
+
+}
+.side-content ul li{
+    padding: 5px;
+}
+.side-content ul li:hover{
+    color: tomato;
+}
+h4{
+    text-align: center;
+}
+.btn-styling{
+    background-color: orangered;
+    width: 100px;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 10px 10px 20px 20px;
+}
+label{
+    margin: 5px 10px;
+}
+h5{
+    padding: 5px;
+}
