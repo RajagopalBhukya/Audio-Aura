@@ -4,6 +4,8 @@ import {Link} from 'react-router-dom';
 import { IoStarSharp } from "react-icons/io5";
 import OurAdvantages from '../../Footer/TemperoryFooter/OurAdvantages';
 import './BrowerallProducts.css'
+import StaticFooter from '../../Footer/MainStaticFooter/StaticFooter';
+
 function AllBrowser(){
   const [initialData, setData] = useState([]);
 
@@ -97,6 +99,8 @@ function AllBrowser(){
 
 </div>
 <OurAdvantages/>
+
+<StaticFooter/>
    </>
   );
 }

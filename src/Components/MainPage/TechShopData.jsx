@@ -6,6 +6,8 @@ import Slider from '../Carousel/Slider';
 import FeatureProductSlider from '../FeaturedProducts/FeatureProductSlider';
 import { IoStarSharp } from "react-icons/io5";
 import BrowseProducts from '../BrowseAll/BrowseProducts';
+import OurAdvantages from '../../Footer/TemperoryFooter/OurAdvantages';
+import StaticFooter from "../../Footer/MainStaticFooter/StaticFooter"
 
 function TechShopData(){
   const [data, setData] = useState([]);
@@ -49,7 +51,7 @@ function TechShopData(){
                   <div className='img-card' style={{height: "220px"}}>
                     <img src={products.images[0]} alt={products.title} 
                     className='card-img-top p-4 img-fluid' 
-                    style={{ height: '220px', width:'300px', objectFit:'contain'}}/>
+                    style={{ height: '220px', width:'300px', objectFit:'conta'}}/>
                   </div>
                   <span className='iconTag'>
                     {
@@ -82,6 +84,8 @@ function TechShopData(){
 
         </div>
       </div>
+      <OurAdvantages/>
+      <StaticFooter/>
     </>
   );
 }

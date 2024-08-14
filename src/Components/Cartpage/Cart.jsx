@@ -1,6 +1,7 @@
 import { BsCartXFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import './Cart.css';
+import StaticFooter from "../../Footer/MainStaticFooter/StaticFooter"
 
 function Cart() {
     return (
@@ -12,6 +13,7 @@ function Cart() {
             <h1 className="text-center">Your Cart is Empty</h1>
             <Link to = "/cart-products"><button className="button-tag">Satrt shopping</button></Link>
         </div>
+      <StaticFooter/>
         </>
     );
 }
