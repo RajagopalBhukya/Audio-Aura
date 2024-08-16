@@ -8,9 +8,42 @@ import StaticFooter from '../../Footer/MainStaticFooter/StaticFooter';
 
 function AllBrowser(){
   const [initialData, setData] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
+ 
+
+
+  const latest=()=>{
+    const filtered=allProducts.slice(0,6);
+    setData(filtered);
+  }
+
+
+  const feature = ()=>{
+    const featureFilter = allProducts.filter(special => special.tag === "featured-product");
+    setData(featureFilter);
+    
+  }
+
+  const toprated = ()=>{
+    const TopRatedProducts = allProducts.filter(rateCount => rateCount.rateCount === 5);
+    setData(TopRatedProducts)
+  }
+
+  const lowest = ()=>{
+    const sortedByPrice = [...allProducts].sort((a, b) => a.finalPrice - b.finalPrice);
+    setData(sortedByPrice);
+  }
+
+
+  const highest = ()=>{
+    const sortedByPrice = [...allProducts].sort((a, b) => b.finalPrice - a.finalPrice);
+    setData(sortedByPrice);
+  }
+
 
   useEffect(() => {
     setData(productsData);
+    setAllProducts(productsData)
   }, []);
 
   
@@ -18,15 +51,15 @@ function AllBrowser(){
    <>
     <div className='display-items'>
       <div className='side-content'>
-        <button className='btn-styling'>Clear All</button>
+        {/* <button className='btn-styling'>Clear All</button> */}
         <h4>Sort By</h4>
         <hr />
         <ul>
-          <li>Latest</li>
-          <li>Featured</li>
-          <li>Top Rated</li>
-          <li>Price(Lowest)</li>
-          <li>Price(Highest)</li>
+          <li onClick={latest}>Latest</li>
+          <li onClick={feature}>Featured</li>
+          <li onClick={toprated}>Top Rated</li>
+          <li onClick={lowest}>Price(Lowest)</li>
+          <li onClick={highest}>Price(Highest)</li>
         </ul>
         <h4>Filter By</h4>
         <hr />
