@@ -2,12 +2,12 @@
     position: relative;
     display: inline-block;
 }
+
 .lens button{
     visibility: hidden;
     width: 80px;
     border-color: white;
-    background:none;
-    
+    background:none; 
     color: #fff;
     text-align: center;
     border-radius: 2px;
@@ -25,3 +25,32 @@
     visibility: visible;
     opacity: 1;
 }
+
+
+.lens span {
+  visibility: hidden;
+  width: 350px; 
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  position: absolute;
+  z-index: 999;
+  top: 120%; 
+  left: 50%;
+  transform: translate(-100%, 20px); 
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  font-size: 14px;
+  }
+  
+
+
+.lens:hover span{
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+  

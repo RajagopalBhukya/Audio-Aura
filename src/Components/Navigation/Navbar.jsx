@@ -3,8 +3,11 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import './Navbar.css'
-
+import Login from './Signup/Login';
 function Navbar() {
+
+
+
     return (
         <>
 
@@ -16,15 +19,15 @@ function Navbar() {
             
           <ul className='d-flex list-unstyled flex-row gap-5'>
             <li className='lens'><BsSearch size={20}/>
-            <button> cart</button>
+            <button> Search</button>
             </li>
 
 
             <li className='nav lens'><Link className='text-decoration-none text-white' to='/cart'>
             <FaCartShopping size={20}/></Link>
-            <button> cart</button><span className='count'></span>
+            <button> cart</button>
             </li>
-            <li><FaUser size={20}/></li>
+            <li className='lens' ><FaUser size={20}/> <span><Login/></span></li>
           </ul>
 
           </div>
