@@ -32,7 +32,7 @@ function AllBrowser(){
   const lowest = ()=>{
     const sortedByPrice = [...allProducts].sort((a, b) => a.finalPrice - b.finalPrice);
     setData(sortedByPrice);
-  }
+  } 
 
 
   const highest = ()=>{
@@ -43,7 +43,14 @@ function AllBrowser(){
 
   useEffect(() => {
     setData(productsData);
-    setAllProducts(productsData)
+    setAllProducts(productsData);
+
+    const sideContent = document.querySelector('.side-content');
+    if (sideContent) {
+        sideContent.style.setProperty('--webkit-scrollbar-width', '10px');
+        sideContent.style.setProperty('--webkit-scrollbar-thumb-background-color', 'darkgrey');
+       
+    }
   }, []);
 
   
@@ -51,18 +58,19 @@ function AllBrowser(){
    <>
     <div className='display-items'>
       <div className='side-content'>
-        {/* <button className='btn-styling'>Clear All</button> */}
+        <button className='btn-styling btn btn-danger'>Clear All</button>
         <h4>Sort By</h4>
         <hr />
         <ul>
           <li onClick={latest}>Latest</li>
-          <li onClick={feature}>Featured</li>
+          <li onClick={feature} >Featured</li>
           <li onClick={toprated}>Top Rated</li>
           <li onClick={lowest}>Price(Lowest)</li>
           <li onClick={highest}>Price(Highest)</li>
         </ul>
+        
         <h4>Filter By</h4>
-        <hr />
+        <hr className='bold' />
         <h5>Brands</h5>
         <input type="checkbox"/>
         <label>JBL</label>

@@ -1,41 +1,134 @@
+
 *{
     padding: 0px;
     margin: 0px;
 }
-.display-items{
-    display: flex;
-}
-.side-content{
-    width: 50%;
-    padding: 10px 10px;
 
-}
-.side-content ul{
-    list-style-type: none;
-    /* padding-right: 20px; */
-    text-align: start;
-
-}
-.side-content ul li{
-    padding: 5px;
-}
-.side-content ul li:hover{
-    color: tomato;
-}
 h4{
     text-align: center;
 }
 .btn-styling{
+
     background-color: orangered;
     width: 100px;
     border: none;
     padding: 5px 5px;
     border-radius: 5px;
     margin: 10px 10px 20px 20px;
+    opacity: 0;
 }
-label{
-    margin: 5px 10px;
+
+
+.btn-styling:hover{
+    opacity: 1;
 }
+
+
 h5{
     padding: 5px;
+}
+
+.display-items {
+    display: flex;
+}
+
+.side-content {
+    width: 50%; 
+    padding: 10px 10px;
+    max-height: 600px; 
+    overflow-y: auto;
+    border-right: 1px solid #ddd; 
+}
+
+.side-content ul {
+    list-style-type: none;
+    text-align: start;
+    padding: 10px;
+}
+
+.side-content ul li {
+    padding: 10px;
+    cursor: pointer; 
+    transition: color 0.3s; 
+}
+
+.side-content ul li:hover {
+    color: tomato;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+label {
+    margin: 5px 10px;
+}
+
+h5 {
+    padding: 5px;
+}
+
+button.btn-styling {
+    background-color: orangered;
+    width: 100px;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 10px 10px 20px 20px;
+    color: white;
+    cursor: pointer; 
+}
+
+
+.side-content ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.side-content ul li:hover,
+.side-content ul li:focus,
+.side-content ul li:active {
+    color: tomato;
+    font-weight: bold; 
+    outline: none; 
+}
+
+
+/* Apply scrollbar styles globally or to specific elements */
+.side-content::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.side-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 5px; 
+}
+
+.side-content::-webkit-scrollbar-thumb:hover {
+    background-color: grey; 
+}
+
+.side-content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* You can also apply it globally like this */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: grey; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
 }
