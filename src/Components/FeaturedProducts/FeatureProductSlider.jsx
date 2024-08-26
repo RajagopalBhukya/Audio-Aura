@@ -197,11 +197,11 @@ function FeatureProductSlider() {
     };
 
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         centerMode: true,
         centerPadding: '0',
         focusOnSelect: true,
@@ -226,7 +226,7 @@ function FeatureProductSlider() {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                 },
             },
         ],
@@ -249,8 +249,8 @@ function FeatureProductSlider() {
                                     <div className='product-info'>
                                         <div className='d-flex align-items-center mt-4 m-4'>
                                         <h3 className='card-title text-truncate  mb-0'>₹{item.finalPrice}</h3>
-                <h5 className='card-title text-truncate  mb-0 ms-3 ' 
-                style={{ textDecoration: 'line-through' }}>₹{item.originalPrice}</h5>
+                            <h5 className='card-title text-truncate  mb-0 ms-3 ' 
+                            style={{ textDecoration: 'line-through' }}>₹{item.originalPrice}</h5>
                                         </div>
                                     </div>
                                 </div>

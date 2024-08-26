@@ -27,6 +27,7 @@ function TechShopData(){
 
   return (
     <>
+
       <Slider />
       <FeatureProductSlider />
       
@@ -44,9 +45,11 @@ function TechShopData(){
 
       <div className='my-4 p-2 m-4'>
         <div className='row'>
+
+
           {filteredData.map((products) => (
             <div key={products.id} className='col-md-3 mb-4'>
-              <Link to={`/${products.id}`} className='text-decoration-none'>
+              <Link to={`/product/${products.id}`} className='text-decoration-none'>
                 <div className='card bg-black text-white border p-2'>
                   <div className='img-card' style={{height: "220px"}}>
                     <img src={products.images[0]} alt={products.title} 
@@ -75,13 +78,12 @@ function TechShopData(){
               </Link>
             </div>
           ))}
-
+          
           <div className='col-md-3 mb-4'>
             <div className='card bg-black text-white border p-2 h-100 d-flex justify-content-center align-items-center'>
               <BrowseProducts />
             </div>
           </div>
-
         </div>
       </div>
       <OurAdvantages/>
