@@ -1,7 +1,7 @@
-.img-card{
+/* .img-card{
     position: relative;
     overflow: hidden; 
-  }
+  } */
 
   .img-card img {
     transition: transform 0.1s ease, filter 0.3s ease; 
@@ -28,7 +28,7 @@
 
 
 .heading .heading-text{
-   padding: 100px;
+   padding: 10px;
    font-weight: bolder;
    font-size: 35px;
 }

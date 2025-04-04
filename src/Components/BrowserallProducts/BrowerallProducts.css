@@ -7,6 +7,7 @@
 h4{
     text-align: center;
 }
+
 .btn-styling{
 
     background-color: orangered;
@@ -45,7 +46,7 @@ h5{
 }
 
 .side-content ul li:hover {
-    color: tomato;
+    color: red;
     font-weight: bold;
 }
 

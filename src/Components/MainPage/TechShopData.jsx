@@ -71,7 +71,7 @@ function TechShopData(){
                       style={{ textDecoration: 'line-through' }}>₹{products.originalPrice}</h5>
                     </div>
                     <div className='d-flex justify-content-center mt-2 button_division'>
-                      <button className='btn px-5 mt-2'><h4>Add to cart</h4></button>
+                      <button className='btn px-5 mt-2' ><h4>Add to cart</h4></button>
                     </div>
                   </div>
                 </div>

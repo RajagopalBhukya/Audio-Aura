@@ -1,5 +1,5 @@
 .titleText .featuredHead{
-    margin: 100px;
+    margin: 10px;
 }
 
 /* Feature.css */
@@ -38,7 +38,7 @@
 }
 
 .product-info {
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px;
     left: 0;
     right: 0;

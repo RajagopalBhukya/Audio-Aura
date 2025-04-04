@@ -9,11 +9,12 @@ function Slider() {
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+  const BASE_URL = import.meta.env.BASE_URL;
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} controls ={false} interval={800}>
       <Carousel.Item className='images'>
-       <img src='/images/products/jbl660nc-1.png' alt="" className='img-fluid'/>
+       <img src={`${BASE_URL}images/products/jbl660nc-1.png`} alt="JBL Headphones" className='img-fluid'/>
         <Carousel.Caption className='text'>
       <h1 className='back-ground-text'>Over Ear</h1>
       
@@ -24,7 +25,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='images'>
-       <img src="/images/products/boat131-3.png" alt="" className='img-fluid' />
+       <img src={`${BASE_URL}/images/products/boat131-3.png1`} alt="" className='img-fluid' />
         <Carousel.Caption className='text' >
         <h1 className='back-ground-text'>In Ear</h1>
 
@@ -36,7 +37,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='images'>
-       <img src="/images/products/sonyXb910n-1.png" alt="" className='img-fluid'/>
+       <img src={`${BASE_URL}/images/products/sonyXb910n-1.png`} alt="" className='img-fluid'/>
 
         <Carousel.Caption className='text'>  
           <h1 className='back-ground-text'>Over Ear</h1>
