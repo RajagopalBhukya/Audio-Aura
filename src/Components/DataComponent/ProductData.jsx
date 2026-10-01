@@ -138,7 +138,7 @@ const productsData = [
     id: 7,
     tag: "hero-product",
     tagline: "Give your favourite music a boost.",
-    heroImage: `${BASE_URL}images/products/sonyxb910n-1.png`,
+       heroImage: `${BASE_URL}images/products/sonyXb910n-1.png`,
     images: [
       `${BASE_URL}images/products/sonyXb910n-1.png`,
       `${BASE_URL}images/products/sonyXb910n-2.png`,
