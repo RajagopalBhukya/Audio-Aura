@@ -1,19 +1,22 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useMemo } from "react";
+import { Link, useParams } from "react-router-dom";
 import productsData from "../DataComponent/ProductData";
 import './Product.css';
 import { IoStarSharp } from "react-icons/io5";
 function Product() {
-    const [product, setProduct] = useState(null); // Initialize as null
     const { id } = useParams();
-
-    useEffect(() => {
-        const clickedProduct = productsData.find(items => items.id === parseInt(id));
-        setProduct(clickedProduct); 
-    }, [id]);
+    const product = useMemo(
+        () => productsData.find(item => item.id === parseInt(id, 10)),
+        [id]
+    );
 
     if (!product) {
-        return <div>Loading...</div>;
+        return (
+            <div className="container text-center py-5">
+                <h2>Product not found</h2>
+                <Link to="/all-products" className="btn btn-danger mt-3">Browse all products</Link>
+            </div>
+        );
     }
 
     return (
@@ -23,7 +26,7 @@ function Product() {
                 <img src={product.images[0]} alt={product.title} className='card-img-top p-4 img-fluid' 
                           style={{ height: '400px', width: '800px', objectFit: 'contain' }}/>
                           <span className='iconTag'>
-                    {[...Array(product.rateCount)].map((i) => <IoStarSharp key={i} className='coni' />)}
+                    {[...Array(product.rateCount)].map((_, i) => <IoStarSharp key={i} className='coni' />)}
                     </span>
                 <h2>{product.title}</h2>
                 <p>{product.info}</p>
