@@ -25,7 +25,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='images'>
-       <img src={`${BASE_URL}/images/products/boat131-3.png1`} alt="" className='img-fluid' />
+              <img src={`${BASE_URL}images/products/boat131-3.png`} alt="boAt Airdopes 131" className='img-fluid' />
         <Carousel.Caption className='text' >
         <h1 className='back-ground-text'>In Ear</h1>
 
@@ -37,8 +37,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='images'>
-       <img src={`${BASE_URL}/images/products/sonyXb910n-1.png`} alt="" className='img-fluid'/>
-
+              <img src={`${BASE_URL}images/products/sonyXb910n-1.png`} alt="Sony WH-XB910N" className='img-fluid'/>
         <Carousel.Caption className='text'>  
           <h1 className='back-ground-text'>Over Ear</h1>
 
